@@ -50,8 +50,11 @@ window.addEventListener('DOMContentLoaded', event => {
     ]
   });
 });
+// Get the modal
+    var modal = document.getElementById("myModal");
 
-var modal = document.getElementById("myModal");
+    // Get the close button
+    var closeBtn = document.getElementById("closeBtn");
 
     // Show the modal when the page loads
     window.onload = function() {
@@ -59,7 +62,7 @@ var modal = document.getElementById("myModal");
     }
 
     // Close the modal when the user clicks the Close button
-    function closeModal() {
+    closeBtn.onclick = function() {
       modal.style.display = "none";
     }
     // Activate Bootstrap scrollspy on the main nav element
