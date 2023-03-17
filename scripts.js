@@ -51,7 +51,17 @@ window.addEventListener('DOMContentLoaded', event => {
   });
 });
 
+var modal = document.getElementById("myModal");
 
+    // Show the modal when the page loads
+    window.onload = function() {
+      modal.style.display = "block";
+    }
+
+    // Close the modal when the user clicks the Close button
+    function closeModal() {
+      modal.style.display = "none";
+    }
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
