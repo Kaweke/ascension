@@ -50,29 +50,7 @@ window.addEventListener('DOMContentLoaded', event => {
     ]
   });
 });
-// Get the modal
-    var modal = document.getElementById("myModal");
 
-    // Get the close button
-    var closeBtn = document.getElementById("closeBtn");
-
-    // Show the modal when the page loads
-    window.onload = function() {
-      modal.style.display = "block";
-    }
-
-    // Close the modal when the user clicks the Close button
-    closeBtn.onclick = function() {
-      modal.style.display = "none";
-    }
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
-        });
-    };
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
